@@ -10,7 +10,7 @@ import ProjectsItem from "./ProjectsItem";
 
 const Projets = () => {
     return (
-        <section id="projets" className="pt-20 pb-48">
+        <section id="projets" className="pt-16 pb-20">
         {/* Header */}
             <motion.div
                 className="md:w-2/4 mx-auto text-center"
@@ -30,7 +30,7 @@ const Projets = () => {
                     <LinearGradient width="w-4/5"/>
                     </div>
                 </div>
-                <p className="mt-10 mb-10">
+                <p className="mt-4 mb-4">
                 Voici quelques projets que j'ai réalisés. 
                 </p>
             </motion.div>

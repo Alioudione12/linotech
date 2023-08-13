@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const Temoignages = () => {
     return (
-        <section id="temoignages" className="pt-20 pb-24">
+        <section id="temoignages" className="pt-20 pb-20">
         {/* Heading */}
             <motion.div
                 className="md:w-1/3 text-center md:text-left"
@@ -17,7 +17,7 @@ const Temoignages = () => {
                 }}>
 
                 <p className="font-playfair font-semibold text-xl mb-2">
-                LES TÉMOI <span className="text-green">GNAGES</span>
+                LES TÉMOI<span className="text-green">GNAGES</span>
                 </p>
                 <LinearGradient width="mx-auto w-4/5"/>
                 <p className="mt-4 ">

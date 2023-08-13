@@ -7,20 +7,11 @@ const Services = () => {
     const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
     return (
-        <section id="services" className="pt-10 pb-24">
+        <section id="services" className="pt-4 pb-20">
         {/* headers and images section */}
             <div className="md:flex md:justify-between md:gap-16 mt-10">
-                <motion.div
-                    className="md:w-1/3"
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{once: true, amount: 0.5}}
-                    transition={{duration: 0.5}}
-                    variants={{
-                        hidden: {opacity: 0, x: -50},
-                        visible: {opacity: 1, x: 0}
-                    }}>
-
+                <div
+                    className="md:w-1/3">
                     <p className="font-playfair font-semibold text-xl mb-5">
                     NOS SERVICES<span className="text-green"> ET EXPERTISES </span>
                     </p>
@@ -29,7 +20,7 @@ const Services = () => {
                     Feuille de route | Python | JavaScript | React  | Django | Nodejs | Mysql 
                     | PostgreSQL | MongoDB | API | tailwindCSS | Css | Html | React Native | Agile | 
                     </p>
-                </motion.div>
+                </div>
 
                 <div className="mt-16 md:mt-0">
                     {isAboveMediumScreens ? (
@@ -70,7 +61,7 @@ const Services = () => {
                         visible: {opacity: 1, y: 0}
                     }}
             >
-                <div className="relative h-32 bg-green p-2">
+                <div className="relative h-32 bg-green p-2 text-white">
                 <div className="z-10">
                     <p className="font-playfair font-semibold text-2xl">#1</p>
                     <p className="font-playfair font-semibold text-2xl mt-3">Recueil des exigences</p>
@@ -95,7 +86,7 @@ const Services = () => {
                         visible: {opacity: 1, y: 0}
                     }}
             >
-                <div className="relative h-32 bg-green p-2">
+                <div className="relative h-32 bg-green p-2 text-white">
                 <div className="z-10">
                     <p className="font-playfair font-semibold text-2xl">#2</p>
                     <p className="font-playfair font-semibold text-2xl mt-3">Développement solution</p>
@@ -120,7 +111,7 @@ const Services = () => {
                         visible: {opacity: 1, y: 0}
                     }}
             >
-                <div className="relative h-32 bg-green p-2">
+                <div className="relative h-32 bg-green p-2 text-white">
                 <div className="z-10">
                     <p className="font-playfair font-semibold text-2xl">#3</p>
                     <p className="font-playfair font-semibold text-2xl mt-3">Déploier et Maintenance</p>

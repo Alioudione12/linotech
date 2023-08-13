@@ -6,14 +6,14 @@ import {FaInstagramSquare} from "react-icons/fa";
 
 const SocialMediaIcons = () => {
     return(
-        <div className="flex justify-center md:justify-start my-10 gap-7">
+        <div className="flex justify-center md:justify-start my-10 gap-7 text-green">
 
             {/* linkedin */}
             <a className="hover:opacity-50 transition duration-500"
                 href="https://www.linkedin.com/in/aliou-dione-b77263193/"
                 target="_blank"
                 rel="noreferrer">
-                <AiFillLinkedin className="text-green" size={30}/>
+                <AiFillLinkedin size={30}/>
             </a>
 
             {/* github */}
@@ -21,14 +21,14 @@ const SocialMediaIcons = () => {
                 href="https://github.com/Alioudione12"
                 target="_blank"
                 rel="noreferrer">
-                <BsGithub className="text-green" size={30}/>
+                <BsGithub size={30}/>
             </a>
                 {/* Twitter */}
                 <a className="hover:opacity-50 transition duration-500"
                 href="/"
                 target="_blank"
                 rel="noreferrer">
-                <AiFillTwitterSquare className="text-green" size={30}/>
+                <AiFillTwitterSquare size={30}/>
             </a>
 
             
@@ -37,7 +37,7 @@ const SocialMediaIcons = () => {
                 href="/"
                 target="_blank"
                 rel="noreferrer">
-                <FaInstagramSquare className="text-green" size={30}/>
+                <FaInstagramSquare size={30}/>
             </a>
         </div>
     )
