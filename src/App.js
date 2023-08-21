@@ -53,7 +53,6 @@ function App() {
         <Services/>
       </div>
 
-      <linearGradient/>
       <div className="w-5/6 mx-auto">
         <Projets/>
       </div>

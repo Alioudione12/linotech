@@ -2,12 +2,15 @@ import LinearGradient from "../components/LinearGradient";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import Skill from "../assets/skills-image.png";
+import {CgWebsite} from "react-icons/cg";
+import {FaMobileAlt} from "react-icons/fa";
+import {GrSettingsOption} from "react-icons/gr";
 
 const Services = () => {
     const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
     return (
-        <section id="services" className="pt-4 pb-20">
+        <section id="services" className="pt-6 pb-20">
         {/* headers and images section */}
             <div className="md:flex md:justify-between md:gap-16 mt-10">
                 <div
@@ -16,9 +19,10 @@ const Services = () => {
                     NOS SERVICES<span className="text-green"> ET EXPERTISES </span>
                     </p>
                     <LinearGradient width="w-4/5"/>
-                    <p className="mt-10 mb-2">
-                    Feuille de route | Python | JavaScript | React  | Django | Nodejs | Mysql 
-                    | PostgreSQL | MongoDB | API | tailwindCSS | Css | Html | React Native | Agile | 
+                    <h1 className="text-green font-playfair text-xl font-bold">Technologies</h1>
+                    <p className="mt-4 mb-2">
+                    Python | JavaScript | React  | Django | Nodejs | Mysql 
+                    | PostgreSQL | MongoDB | API | tailwindCSS | Css | Html | React Native
                     </p>
                 </div>
 
@@ -63,15 +67,18 @@ const Services = () => {
             >
                 <div className="relative h-32 bg-green p-2 text-white">
                 <div className="z-10">
-                    <p className="font-playfair font-semibold text-2xl">#1</p>
-                    <p className="font-playfair font-semibold text-2xl mt-3">Recueil des exigences</p>
+                    <CgWebsite className=" text-blackLight" size={30}/>
+                    <p className="font-playfair font-semibold text-2xl mt-3">Web Development</p>
                 </div>
                 </div>
-                <p className="mt-0">
-                Nous suivons la première et principale priorité de 
-                rassembler les exigences, les ressources et informations 
-                pour commencer votre projet d'application.
-                </p>
+                <h1 className="font-bold mt-1 font-playfair">WEB PRESTATIONS DE SERVICE</h1>
+                <div className="mt-2">
+                <li> Applications Web personnalisées</li>
+                <li> Applications de l'entreprise</li>
+                <li> Commerce électronique</li>
+                <li> Système de gestion de contenu</li>
+                </div>
+                
             </motion.div>
 
             {/* innovative */}
@@ -88,14 +95,16 @@ const Services = () => {
             >
                 <div className="relative h-32 bg-green p-2 text-white">
                 <div className="z-10">
-                    <p className="font-playfair font-semibold text-2xl">#2</p>
-                    <p className="font-playfair font-semibold text-2xl mt-3">Développement solution</p>
+                <FaMobileAlt className=" text-blackLight" size={30}/>
+                    <p className="font-playfair font-semibold text-2xl mt-3"> Mobile Development</p>
                 </div>
                 </div>
+                <h1 className="font-bold mt-1 font-playfair">NOTRE EXPÉRIENCE, À VOTRE SERVICE</h1>
                 <p className="mt-2">
-                Développement d'application mobile/web commencé à 
-                utiliser les derniers outils et technologies 
-                avec transparence comme React, Nodejs, React Native.
+                Nous concevons des solutions mobiles qui répondront aux 
+                besoins et aux objectifs de votre entreprise. Notre 
+                expérience couvre le développement d'applications 
+                mobiles natives, multiplateformes et hybrides.
                 </p>
             </motion.div>
 
@@ -113,15 +122,18 @@ const Services = () => {
             >
                 <div className="relative h-32 bg-green p-2 text-white">
                 <div className="z-10">
-                    <p className="font-playfair font-semibold text-2xl">#3</p>
-                    <p className="font-playfair font-semibold text-2xl mt-3">Déploier et Maintenance</p>
+                <GrSettingsOption className=" text-blackLight" size={30}/>
+                    <p className="font-playfair font-semibold text-2xl mt-3">Solutions logicielles</p>
                 </div>
                 </div>
-                <p className="mt-2">
-                Après l'essai et après tous les processus, 
-                votre application mobile/web sont prêtes à être lancée 
-                sur un hébergeur app Store ou le Play Store.
-                </p>
+                <h1 className="font-bold font-playfair">NOS SERVICES DE DÉVELOPPEMENT DE LOGICIELS PERSONNALISÉS</h1>
+                <div className="mt-2">
+                <li> Architecture et conception</li>
+                <li> Conception et l'interaction</li>
+                <li> Développement et mise en œuvre</li>
+                <li> Documentation technique et utilisateur</li>
+                <li> Entretien et assistance</li>
+                </div>
             </motion.div>
             </div>
         </section>

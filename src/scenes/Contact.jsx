@@ -19,7 +19,7 @@ const Contact = () => {
     }
     return (
 
-        <section id="contact" className="py-10">
+        <section id="contact" className="py-10 mt-20">
             {/*HEADING  */}
             <div
                 className="justify-end w-full p-5">

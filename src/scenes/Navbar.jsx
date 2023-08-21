@@ -3,7 +3,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "../hooks/useMediaQuery";
 import {BiMenu} from "react-icons/bi";
 import {MdClose} from "react-icons/md";
-//import LogoPhoto from "../assets/LogoTech.png";
+import LogoPhoto from "../assets/LogoTech.png";
 
 const Link = ({ page, selectedPage, setSelectedPage}) => {
     const lowerCasePage = page.toLowerCase();
@@ -26,7 +26,8 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage }) => {
     return (
         <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-4`}>
             <div className="flex items-center justify-between mx-auto w-5/6">
-            <h4 className="font-playfair text-xl font-bold text-green">LinoTech</h4>
+                <img src={LogoPhoto} alt="logo" className="w-16"/>
+            <h4 className="font-playfair text-l font-semibold text-green flex items-center justify-between mx-auto w-5/6">LinoTech</h4>
                 {/* <h4 className="font-playfair text-xl ">Mr. Aliou Dione</h4> */}
                 {/* DESKTOP NAV  */}
                 {isAboveSmallScreens ? (

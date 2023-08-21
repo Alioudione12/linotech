@@ -1,5 +1,5 @@
 import useMediaQuery from "../hooks/useMediaQuery";
-import ProfilePhoto from "../assets/linotechPro.png";
+import ProfilePhoto from "../assets/linotech.mp4";
 
 
 const Landing = () => {
@@ -16,14 +16,12 @@ const Landing = () => {
                 gap-16 
                 py-10">
             {/* image section */}
-            <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-10 md:mt-20">
+            <div className="md:order-2 flex justify-center basis-4/5 z-10 mt-10 md:mt-20 ">
                 {isAboveMediumScreens ? (
                     <div className="
                         relative 
-                        filter
-                        saturate-200
                         z-0 
-                        ml-20 
+                        ml-20
                         before:absolute 
                         before:-top-20 
                         before:-left-20
@@ -32,11 +30,10 @@ const Landing = () => {
                         before:max-w-[400px] 
                         before:h-full
                         before:z-[-1]">
-                        <img 
+                        <video
                             alt="profile" src={ProfilePhoto}
+                            controls="controls" autoPlay={true} muted={true} loop={true}
                             className="
-                            hover:filter 
-                            hover:saturate-200 
                             transition 
                             duration-500 
                             z-10 
@@ -47,17 +44,16 @@ const Landing = () => {
                         />
                     </div>
                 ):(
-                    <img 
+                    <video 
                         alt="profile" src={ProfilePhoto}
+                        controls="controls" autoPlay={true} muted={true} loop={true}
                         className="
-                            hover:filter 
-                            hover:saturate-200 
                             transition 
                             duration-500 
                             z-10 
                             w-full
-                            max-w-[500px] 
-                            md:max-w-[600px] 
+                            max-w-[400px] 
+                            md:max-w-[300px] 
                             "
                         />
                 )}
@@ -77,8 +73,9 @@ const Landing = () => {
                         </span>
                     </p>
                     
-                    <p className="mt-10 mb-4 text-md text-start md:text-start">
-                    Linotech est spécialisé dans le développement full stack et le JavaScript python
+                    <p className="mt-10 mb-4 text-md text-start md:text-start bg-green p-4">
+                    LinoTech qui consiste à assurer  la transformation digitale 
+                    des petites et moyennes entreprises et spécialisé dans le développement solution et le JavaScript, python
                     ensuite, plus particulièrement dans les librairies comme Django, React NodeJS et React Native.
                     Au-delà des prestations proposées traditionnellement par 
                     les intégrateurs, nous offrons à nos clients la souplesse d'un 

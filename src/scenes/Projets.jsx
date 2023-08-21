@@ -26,23 +26,23 @@ const Projets = () => {
                     <p className="font-playfair font-semibold text-xl">
                     NOS <span className="text-green">PROJETS</span>
                     </p>
-                    <div className="flex justify-center mt-5">
+                    <div className="flex justify-center mt-2">
                     <LinearGradient width="w-4/5"/>
                     </div>
                 </div>
-                <p className="mt-4 mb-4">
+                <p className="mt-30 mb-4">
                 Voici quelques projets que j'ai réalisés. 
                 </p>
             </motion.div>
             {/* projects */}
             <div className="justify-center">
                 <div className=" grid sm:grid-cols-3 gap-10 ">
-                <ProjectsItem img={Project1} title="Assuerplus" description=" Passionné de nouvelles technologies, j'exerce en tant que développeur front-end multifonctionnel et afin d'étoffer mes expériences"/>
-                <ProjectsItem img={Project2} title="ecommerce" description=" salut paris"/>
-                <ProjectsItem img={Project3} title="Hotels" description=" je vais au taff"/>
-                <ProjectsItem img={Project4} title="react native appli" description=" code dev all"/>
-                <ProjectsItem img={Project5} title="react native appli" description=" code dev all"/>
-                <ProjectsItem img={Project6} title="Une App" description="une appli multi-platform disponible sur Store et Androide"/>
+                <ProjectsItem img={Project1} title="Site d'actualité " description=" Toute l'actu en direct et en continu"/>
+                <ProjectsItem img={Project2} title="Site E-commerce" description=" Cette solution de commerce électronique qui permet aux utilisateurs effectués du shopping vêtements"/>
+                <ProjectsItem img={Project3} title="D'assurance auto" description="Cet site web personnalise l'assurance automobile en choisissant les garanties complémentaires qui correspondent à vos besoins des utilisateurs"/>
+                <ProjectsItem img={Project4} title="Fashion et Mode" description="Un site spécialisé dans la mode et les vêtements de créateurs de grandes maisons de couture."/>
+                <ProjectsItem img={Project5} title="Restauration" description="une solution qui vous fera gagner du temps dans la gestion du restaurant et les réservations au quotidien"/>
+                <ProjectsItem img={Project6} title="Reservation Hotels et restaurant " description="Une application touristique dans le secteur des voyages multi-platform disponible sur Store et Androide permet la reservation hotels et restaurants dans toutes les villes "/>
                 </div>
             </div>
         </section>
