@@ -37,12 +37,12 @@ const Projets = () => {
             {/* projects */}
             <div className="justify-center">
                 <div className=" grid sm:grid-cols-3 gap-10 ">
-                <ProjectsItem img={Project1} title="Site d'actualité " description=" Toute l'actu en direct et en continu"/>
-                <ProjectsItem img={Project2} title="Site E-commerce" description=" Cette solution de commerce électronique qui permet aux utilisateurs effectués du shopping vêtements"/>
+                <ProjectsItem img={Project1} title="Site d'actualité " description="Un Site Actualité qui permette de poster des nouveautés de l'actualité international."/>
+                <ProjectsItem img={Project2} title="Site E-commerce" description="Une application d’e-commerce, qui permet aux utilisateurs d'acheter des produits en ligne, de suivre leur commande et de gérer leur compte."/>
                 <ProjectsItem img={Project3} title="D'assurance auto" description="Cet site web personnalise l'assurance automobile en choisissant les garanties complémentaires qui correspondent à vos besoins des utilisateurs"/>
-                <ProjectsItem img={Project4} title="Fashion et Mode" description="Un site spécialisé dans la mode et les vêtements de créateurs de grandes maisons de couture."/>
-                <ProjectsItem img={Project5} title="Restauration" description="une solution qui vous fera gagner du temps dans la gestion du restaurant et les réservations au quotidien"/>
-                <ProjectsItem img={Project6} title="Reservation Hotels et restaurant " description="Une application touristique dans le secteur des voyages multi-platform disponible sur Store et Androide permet la reservation hotels et restaurants dans toutes les villes "/>
+                <ProjectsItem img={Project4} title="Tripsen" description="Une Solution qui permet la gestion de logement et hotels dans tous les pays en afrique"/>
+                <ProjectsItem img={Project5} title="Restauration" description="Un site de recettes de cuisine où les utilisateurs peuvent partager leurs recettes, les noter, les commenter et les sauvegarder dans leurs favoris."/>
+                <ProjectsItem img={Project6} title="App de réservation de voyages " description="Un site web de réservation de voyages qui permet aux utilisateurs de rechercher et de réserver des vols, des hôtels et des activités en ligne."/>
                 </div>
             </div>
         </section>

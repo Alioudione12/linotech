@@ -27,7 +27,6 @@ const Navbar = ({isTopOfPage, selectedPage, setSelectedPage }) => {
         <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-4`}>
             <div className="flex items-center justify-between mx-auto w-5/6">
                 <img src={LogoPhoto} alt="logo" className="w-16"/>
-            <h4 className="font-playfair text-l font-semibold text-green flex items-center justify-between mx-auto w-5/6">LinoTech</h4>
                 {/* <h4 className="font-playfair text-xl ">Mr. Aliou Dione</h4> */}
                 {/* DESKTOP NAV  */}
                 {isAboveSmallScreens ? (
